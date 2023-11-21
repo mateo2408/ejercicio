@@ -19,10 +19,11 @@ int main()
         for (int j = 0; j < m; j++)
         {
             matrix[i][j]=0;
-            printf("%d\t", matrix[i][j]);
         }
-        printf("\n");
     }
-    
+    for (int i = 0; i < n; i++)
+    {
+        matrix[i][i] = 1;
+    }
     return 0;
 }
